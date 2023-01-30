@@ -1,0 +1,14 @@
+<mat-card>
+  <form [formGroup]="PostForm">
+    <mat-form-field class="example-full-width mat-focused">
+      <mat-label>Title</mat-label>
+      <input matInput placeholder="Ex. Title" name="title" formControlName="title">
+    </mat-form-field>
+    <mat-form-field class="example-full-width mat-focused">
+      <mat-label>Post Description</mat-label>
+      <textarea name="descrition" formControlName="description" rows="6" matInput placeholder="Ex. It makes me feel..."></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="accent" (click)="submitPost()">Save Post</button>
+  </form>
+</mat-card>
+<app-post-list></app-post-list>

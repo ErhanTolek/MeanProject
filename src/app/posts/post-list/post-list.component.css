@@ -1,0 +1,33 @@
+.mat-accordion{
+  display: block;
+  padding: 16px;
+  margin: auto;
+}
+
+mat-expansion-panel{
+  width: 60%;
+  margin: auto;
+  background-color: rgb(76, 165, 135);
+
+}
+.mat-expansion-panel-header .mat-expanded{
+  background-color: none;
+}
+
+mat-card{
+  width: 60%;
+  margin: auto;
+  margin-top: 6px;
+  background-color: blueviolet;
+}
+
+mat-card-content{
+  width: 10%;
+  margin: auto;
+
+  color: white;
+}
+button{
+  background-color: rgb(76, 165, 135);
+  border: none;
+}

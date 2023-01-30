@@ -1,0 +1,25 @@
+
+<div *ngIf="isEmpty">
+  <mat-card >
+    <mat-card-content>No Data</mat-card-content>
+  </mat-card>
+</div>
+
+<div *ngFor="let post of posts">
+  <div>
+    <mat-accordion >
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{post.title}}
+          </mat-panel-title>
+          <button (click)="deletePost(post.title)"><mat-icon color="primary">delete_outline</mat-icon></button>
+        </mat-expansion-panel-header>
+        <div>
+          <p>{{post.description}}</p>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+
+
